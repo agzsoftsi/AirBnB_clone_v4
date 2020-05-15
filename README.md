@@ -164,7 +164,7 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 
 Carlos Andres Garcia Morales - [Github](https://github.com/agzsoftsi) / [Twitter](https://twitter.com/karlgarmor)
 
-Diego Quintero - [Github](https://github.com/dgquintero) / [Twitter](https://twitter.com/danielq02)
+Daniel Quintero - [Github](https://github.com/dgquintero) / [Twitter](https://twitter.com/danielq02)
 
 Second part of Airbnb: Joann Vuong
 ## License
