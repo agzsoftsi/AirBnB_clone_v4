@@ -22,11 +22,11 @@ $(document).ready(function () {
   });
 });
 
-$.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
+$.get('http://127.0.0.1:5001/api/v1/status/', function (data, status) {
   console.log(data);
   if (data.status === 'OK') {
-    $('DIV#api_status').addClass('available');
+    $('#api_status').addClass('available');
   } else {
-    $('DIV#api_status').removeClass('available');
+    $('#api_status').removeClass('available');
   }
 });
