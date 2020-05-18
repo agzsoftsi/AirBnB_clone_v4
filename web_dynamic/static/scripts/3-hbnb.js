@@ -20,7 +20,7 @@ $(document).ready(function () {
       $('.amenities h4').html('&nbsp');
     }
   });
-  $.get('http://127.0.0.1:5001/api/v1/status/', function (data, status) {
+  $.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
     console.log(data);
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
@@ -35,9 +35,9 @@ $(document).ready(function () {
     dataType: 'json',
     contentType: 'application/json',
     success: function (data) {
-      for (const content in data) {
-        const place = data[content];
-        $('.places ').append('<article><h2>' + place.name + '</h2><div class="price_by_night"><p>$' + place.price_by_night + '</p></div><div class="information"><div class="max_guest"><div class="guest_image"></div><p>' + place.max_guest + '</p></div><div class="number_rooms"><div class="bed_image"></div><p>' + place.number_rooms + '</p></div><div class="number_bathrooms"><div class="bath_image"></div><p>' + place.number_bathrooms + '</p></div></div><div class="description"><p>' + place.description + '</p></div></article>');
+      for (let i = 0; i < data.length; i++) {
+        let place = data[i];
+        $('.places ').append('<article><h2>' + place.name + '</h2><div class="price_by_night">' + place.price_by_night + '</div><div class="information"><div class="max_guest"><div class="guest_image"></div><p>' + place.max_guest + '</p></div><div class="number_rooms"><div class="bed_image"></div><p>' + place.number_rooms + '</p></div><div class="number_bathrooms"><div class="bath_image"></div><p>' + place.number_bathrooms + '</p></div></div><div class="description"><p>' + place.description + '</p></div></article>');
       }
     }
   });
