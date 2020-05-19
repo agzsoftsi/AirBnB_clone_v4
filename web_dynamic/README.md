@@ -19,3 +19,8 @@
 - You must use jQuery version 3.x
 - You are not allowed to use var
 - HTML should not reload for each action: DOM manipulation, update values, fetch data…
+
+## Authors
+Carlos Andres Garcia Morales - [Github](https://github.com/agzsoftsi) / [Twitter](https://twitter.com/karlgarmor)
+
+Daniel Quintero - [Github](https://github.com/dgquintero) / [Twitter](https://twitter.com/danielq02)
